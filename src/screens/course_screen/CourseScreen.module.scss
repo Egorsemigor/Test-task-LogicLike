@@ -1,0 +1,15 @@
+.courses_screen {
+  max-width: 1551px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 24px;
+
+  & .courses_container {
+    max-width: 1215px;
+    flex-grow: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+}

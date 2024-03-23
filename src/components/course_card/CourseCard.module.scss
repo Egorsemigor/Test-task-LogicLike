@@ -1,0 +1,47 @@
+@import "../../scss/vars.scss";
+.course_card {
+  max-width: 393px;
+  min-width: 177px;
+  height: 210px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 13px -4px $shadow-color;
+  cursor: pointer;
+
+  & .image_container {
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 162px;
+    & .image {
+      width: 144px;
+      height: 144px;
+    }
+  }
+  & .name_container {
+    padding: 12px 18px 18px 18px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 1056px) {
+  .name_container {
+    height: 66px;
+  }
+
+  .course_card {
+    height: 228px;
+  }
+}
+
+@media (min-width: 1530px) {
+  .course_card {
+    width: 385px;
+  }
+}
+
+@media (min-width: 1550px) {
+  .course_card {
+    width: 393px;
+  }
+}
